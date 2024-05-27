@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href ="{% static 'css/style.css' %}">
+    <title>RINAH'S FASHION HOUSE</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to the best fashion house in Town</h1>
+    <img src="{% static 'image/model.png' %}" class="image"
+    style="width:500px; margin-bottom: -5opx;" />
+
+    <div class="subscribe_box">
+     <form action = "" method="emailadd">{% csrf_token %}
+        <div class="formbox">
+            <input type="text" name="email address" placeholder="enter email address">
+            <button type="submit">subscribe</button>
+        </div>
+     </form>
+    </div>
+        
+</body>
+</html>
